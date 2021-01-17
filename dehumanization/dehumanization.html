@@ -4,6 +4,7 @@
   <head>
     <title>Dehumanization</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../index.css">
@@ -24,7 +25,9 @@
     <div id="main">
       <div class="page-upper">
         <nav class="navbar navbar-expand-md navbar-light">
-          <a class="navbar-brand" href="../home.html">MN</a>
+          <a class="navbar-brand" href="../home.html">
+            <img src="../Logo.svg">
+          </a>
           <button class="navbar-toggler ml-auto" type="button" aria-expanded="false" aria-label="Toggle navigation">
             <span style="font-size:5vw;color:#201F1B;cursor:pointer" onclick="openNav()">&#9776;</span>
           </button>
@@ -49,7 +52,20 @@
       <div class="page-lower">
         <p> Context:  Deep Learning Group Assignment </p>
         <p> Task:  Reimplement and expand Mendelsohn et al's "A Framework for the Computational Linguistic Analysis of Dehumanization". </p>
-        <p> Skills practiced:  NLP, regex, data visualization </p>
+        <p> Skills used:  NLP, DL, regex, ggplot, research presentation</p>
+
+        <br>
+        <div>
+          <h3>At a Glance</h3>
+          <ul>
+            <li>In a group, I used DL and NLP techniques to measure dehumanization in language.</li>
+            <li>The research is useful to language users, especially publications, as well as LGBTQ and religious communities.</li>
+            <li>This project used my DL skills while investigating social barriers, showing how the two form
+              a valuable research paradigm.</li>
+          </ul>
+        </div>
+        <br>
+
         <div class="part">
           <h3>Part 1: A Word to the Wise</h3>
           For the final project of Deep Learning, my group decided to reimplement <a href="https://www.frontiersin.org/articles/10.3389/frai.2020.00055/full">this 2018 paper</a> by Mendelsohn et al.
@@ -58,8 +74,8 @@
           In short, this paper uses a word2vec model to measure dehumanizing attitudes in LGBTQ terms like <em>homosexual</em> and <em>gay</em>.
           This dehumanization was quantified along four axes: negative evaluation, denial of agency, moral disgust, and vermin as
           a metaphor. By drawing on a large <em>New York Times</em> corpus from 1986 to 2016, Mendelsohn et al. was able to track how the usage
-          of these terms has changed over time. For example, while LGBTQ terms have become more humanizing in this timeframe,
-          <em>homosexual</em> has emerged as more dehumanizing than <em>gay</em> or LGBTQ terms at large.
+          of these terms has changed over time. <b>For example, while LGBTQ terms have become more humanizing in this timeframe,
+          <em>homosexual</em> has emerged as more dehumanizing than <em>gay</em> or LGBTQ terms at large.</b>
         </div>
 
         <br>
@@ -88,7 +104,7 @@
         <br>
         <div class="part">
           <h3>Part 3: A Picture Is Worth a Thousand Words</h3>
-          I also worked on the data visualizations for our project. Here is an example plot showing the valence of 
+          I used plotnine (Python implementation of ggplot) to make the data visualizations for our project. Here is an example plot showing the valence of 
           <em>homosexual</em>, <em>gay</em>, all LGBTQ terms, and <em>American</em> (as a non-neutral control variable).
           <figure class="row justify-content-center">
             <img src="lgbt_valence.png" alt="Plot of the valence scores for homosexual, gay, all LGBTQ terms, and American" id="plot" class="mt-3 mb-3">
@@ -97,13 +113,16 @@
           
           To expand upon the paper, we also used the same methodology to measure the dehumanizing attitudes of religious
           terms, namely <em>Muslim</em> and <em>Christian</em>. We expected to find <em>Muslim</em> to be less
-          humanizing than <em>Christian</em>, which was confirmed by our results.
+          humanizing than <em>Christian</em>, which was generally confirmed by our results.
 
           <figure class="row justify-content-center">
             <img src="religion_valence.png" alt="Plot of the valence scores for muslim, christian, and American" id="plot" class="mt-3 mb-3">
             <figcaption><em>Muslim</em> is more negative than <em>Christian</em> or <em>American</em> across the entire timeframe.</figcaption>
           </figure>
+
+          This is our final <a href="of_mice_and_men.jpg">poster presentation</a>.
         </div>
+        <br>
         <div class="part">
           <h3>Major Takeaways</h3>
           <b>Words are powerful in ways we don't often comprehend.</b>
@@ -114,7 +133,11 @@
           <ul>
             <li>This project not only quantifies the work of social psychology on dehumaniziation, but also substantiates the lived experiences of marginalized social groups.</li>
           </ul>
+          <br>
+          <h3>Next Steps</h3>
+          To continue this project, I would expand the methodology to other questions. For example, which communities are especially humanized, rather than the other way around?
         </div>
+        <br>
       </div>
     </div>
     <br>

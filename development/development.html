@@ -4,6 +4,7 @@
   <head>
     <title>Development</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../index.css">
@@ -24,7 +25,9 @@
     <div id="main">
       <div class="page-upper">
         <nav class="navbar navbar-expand-md navbar-light">
-          <a class="navbar-brand" href="../home.html">MN</a>
+          <a class="navbar-brand" href="../home.html">
+            <img src="../Logo.svg">
+          </a>
           <button class="navbar-toggler ml-auto" type="button" aria-expanded="false" aria-label="Toggle navigation">
             <span style="font-size:5vw;color:#201F1B;cursor:pointer" onclick="openNav()">&#9776;</span>
           </button>
@@ -49,12 +52,23 @@
       <div class="page-lower">
         <p> Context:  UI/UX Assignment </p>
         <p> Task: Use React to build a list and aggregator interface. </p>
-        <p> Skills practiced:  React, Javascript, designing for usability, clean code </p>
+        <p> Skills used:  React, Javascript, designing for usability, clean code </p>
+        <br>
+        <div>
+          <h3>At a Glance</h3>
+          <ul>
+            <li>I created a desktop interface for a cheese shop, utilising the required list and aggregator format.</li>
+            <li>My user group was beginning cheese enthusiasts who need guidance in purchasing cheese.</li>
+            <li>The list/aggregator setup makes it easy to filter and sort, making it especially helpful
+              in navigating the cheese landscape.</li>
+          </ul>
+        </div>
+        <br>
         <div class="part">
           <h3>Part 1: Tough Cheese</h3>
           For this assignment, I created a cheese shop app called La Fromagerie, with a list interface serving 
-          as a display case for the cheeses and an aggregator serving as a shopping cart. The goal of 
-          the app is to help users know about the cheeses they're buying and provide an easy shopping experience. 
+          as a display case for the cheeses and an aggregator serving as a shopping cart. <b>The goal of 
+          the app is to help users know about the cheeses they're buying and provide an easy shopping experience.</b>
           <br>
           <br>
           My target audience is the consumer who is interested in entering the cheese world but does not know where
@@ -116,14 +130,15 @@
 
         <div class="part">
           <h3>Part 3: Cheesy Come, Cheesy Go</h3>
-          I also focused on the readability and extensibility of my code. I created a clear architecture with
-          multiple components to keep my code flexible and reusable. I tried to strike a balance between factoring
-          out common code and maintaining readability; for example, I used one Card class to handle CSS styling, 
-          but I created separate DisplayCard and CartCard components because they used different functions. 
-          I also made sure to write comments for every component and function.
-
+          I also focused on the <b>readability and extensibility</b> of my code. 
           <br>
-          <br>
+          <ul class="mt-3">
+            <li>I created a clear architecture with multiple components to keep my code flexible and reusable.</li>
+            <li>I tried to strike a balance between factoring
+              out common code and maintaining readability; for example, I used one Card class to handle CSS styling, 
+              but I created separate DisplayCard and CartCard components because they used different functions. </li>
+            <li>I made sure to write comments for every component and function.</li>
+          </ul> 
           This is <a href="#">the Github repository</a> for the app,
           and this is <a href="https://dry-beach-72609.herokuapp.com/">the deployed website</a>.
         </div>
@@ -142,7 +157,12 @@
           <ul>
             <li>Reducing the number of lines in your code does not always mean it's easier to understand. Sometimes, two objects are better than one, even if they share similarities.</li>
           </ul>
+          <br>
+          <h3>Next Steps</h3>
+          I would continue this project by pitching this interface to a real cheese shop, tailoring the interface 
+          to their specific wares.
         </div>
+        <br>
       </div>
     </div>
     <br>
